@@ -1,0 +1,14 @@
+<% @lits.reverse.each do |lit| %>
+<div>
+  <% lits.each do |lit| %>
+  <tr>
+    <h1><td><%= lit.user.email %></td></h1>
+    <h2><td><%= lit.body %></td></h2>
+    <h3><td><%= lit.created_at %></td></h3>
+  </tr>
+
+  <% end %>
+</div>
+
+<%= link_to 'New Lit', new_lit_path(@user) %>
+<% end %>
