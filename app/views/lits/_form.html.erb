@@ -1,24 +1,23 @@
 <%= form_with(model: lit, local: true) do |form| %>
-<% if lit.errors.any? %>
-<div id="error_explanation">
-  <h2><%= pluralize(lit.errors.count, "error") %> stopped this lit from being saved </h2>
+  <% if lit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lit.errors.count, "error") %> prohibited this litter from being saved:</h2>
 
-  <ul>
-    <% lit.errors.full_messages.each. do |message| %>
-      <li><%= message %></li>
+      <ul>
+      <% lit.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
       <% end %>
-  </ul>
-</div>
+      </ul>
+    </div>
+  <% end %>
 
-<% end %>
+  <p>
+    <%= form.label :body%>
+    <br>
+    <%= form.text_field :body, :id => 'body'  %>
+  </p>
 
-<p>
-  <%= form.label :body %>
-  <br>
-  <%= form.text_field :body, :id => 'body' %>
-</p>
-
-<div class="actions">
-  <%= form.submit %>
-</div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>
