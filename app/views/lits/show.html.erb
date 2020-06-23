@@ -1,10 +1,3 @@
 <%= button_to 'Like', lit_likes_path(@lit), method: :lit %>
 
-<% pre_like = @lit.likes.find { |like| like.user_id == current_user.id} %>
-<% if pre_like %>
-  <%= button_to 'Unlike', lit_like_path(@lit, pre_like), method: :delete %>
-<% else %>
-  <%= button_to 'Like', lit_likes_path(@lit), method: :lit %>
-<% end %>
-
 <p><%= @lit.likes.count %> <%= (@lit.likes.count) == 1 ? 'Like' : 'Likes'%></p>
