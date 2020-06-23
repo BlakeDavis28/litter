@@ -5,7 +5,9 @@
       <h2><td><%= lit.body %></td></h2>
       <h3><td><%= lit.created_at %></td></h3>
     </tr>
+    <p><%= lit.likes.count %> <%= (lit.likes.count) == 1 ? 'Like' : 'Likes'%></p>
   <% end %>
+
 </div>
 
 <%= link_to 'New Lit', new_lit_path(@user) %>
