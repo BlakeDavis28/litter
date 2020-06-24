@@ -1,5 +1,6 @@
 <div>
-<h1><%= @userinfo.email %></h1>
+<h1><%= @userinfo.username %></h1>
+<h3><%= @userinfo.bio %></h3>
 <h2>You have littered <%= @usercount.size %> time(s).</h2>
 </div>
 
@@ -9,9 +10,20 @@
     <p>
       <tr>
         <div  class="lit">
-          <h3 class="black"><td><%= link_to lit.user.email, user_profile_path(lit.user) %></td></h3>
+          <h3 class="black"><td><%= link_to lit.user.username, user_profile_path(lit.user) %></td></h3>
           <h2><td><%= lit.body %></td></h2>
           <h3><td><%= lit.created_at %></td></h3>
+          <% if current_user.liked? lit %>
+            <%= link_to dislike_lit_path(lit.id), method: :put do %>
+                <%= image_tag("like.png", :alt => "Like", height: 18, width: 20) %>
+                <%= lit.get_likes.size %>
+            <% end %>
+          <% else %>
+            <%= link_to like_lit_path(lit), method: :put do %>
+                <%= image_tag("dislike.png", :alt => "Like", height: 18, width: 20) %>
+                <%= lit.get_likes.size %>
+            <% end %>
+          <% end %>
           <span class="litter-button">
             <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you sure?", :method => :delete %>
           </span>

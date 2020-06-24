@@ -25,6 +25,18 @@ def destroy
   redirect_to '/', :notice => "Your fire has been put out"
 end
 
+def like
+  @lit = Lit.find(params[:id])
+  @lit.liked_by current_user
+  redirect_to '/'
+end
+
+def dislike
+  @lit = Lit.find(params[:id])
+  @lit.disliked_by current_user
+  redirect_to '/'
+end
+
 private
 def lit_params
   params.require(:lit).permit(:body)

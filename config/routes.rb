@@ -1,19 +1,16 @@
 Rails.application.routes.draw do
-
   root 'lits#index'
 
   devise_for :users
 
-  resources :lits
-  resources :users do
-
   resources :lits do
-    resources :likes
+    member do
+        put "like", to: "lits#like"
+        put "dislike", to: "lits#dislike"
+      end
   end
-  end
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
   resources :users do
     get 'profile'
   end
-
 end
