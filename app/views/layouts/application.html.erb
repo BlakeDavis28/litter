@@ -11,7 +11,7 @@
 
   <body>
     <p class="navbar-text">
-      <span> Litter </span>
+      <span> Litter - Your Trash on The Internet - No Repercussions </span>
       <% if user_signed_in? %>
       Logged in as <strong> <%= current_user.email %></strong>
       <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -25,3 +25,7 @@
     <%= yield %>
   </body>
 </html>
+
+<button>
+<%= link_to 'Back', lits_path %>
+</button>
