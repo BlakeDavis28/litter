@@ -1,7 +1,7 @@
 <div>
   <% @lits.reverse.each do |lit| %>
     <tr>
-      <h1><%= link_to lit.user.username, user_profile_path(lit.user) %></h1>
+      <h1><%= link_to lit.user.email, user_profile_path(lit.user) %></h1>
       <h2><td><%= lit.body %></td></h2>
       <h3><td><%= lit.created_at %></td></h3>
       <% if current_user.liked? lit %>
@@ -22,4 +22,6 @@
   <% end %>
 </div>
 
+<button class = "litbutton">
 <%= link_to 'New Litter', new_lit_path(@user) %>
+</button>

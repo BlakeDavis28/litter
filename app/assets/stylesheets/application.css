@@ -63,7 +63,7 @@ input[type=text]{
     font-size: 14px;
  }
 
- .lit{
+ .lit {
     background: #fff;
     border-radius: 8px;
     border: 1px solid #d3d3d3;
@@ -80,4 +80,11 @@ input[type=text]{
 
 .right {
     float: right !important;
+}
+
+.black {
+  font-size: 2em;
+  font-weight: bold;
+  color: #1da1f2;
+  text-decoration: underline;
 }

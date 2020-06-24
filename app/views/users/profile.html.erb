@@ -1,6 +1,5 @@
 <div>
-<h1><%= @userinfo.username %></h1>
-<h3><%= @userinfo.bio %></h3>
+<h1><%= @userinfo.email %></h1>
 <h2>You have littered <%= @usercount.size %> time(s).</h2>
 </div>
 
@@ -9,8 +8,8 @@
   <% if @userinfo == lit.user %>
     <p>
       <tr>
-        <div  class="lit">
-          <h3 class="black"><td><%= link_to lit.user.username, user_profile_path(lit.user) %></td></h3>
+        <div class="lit">
+          <h3 class="black"><td><%= link_to lit.user.email, user_profile_path(lit.user) %></td></h3>
           <h2><td><%= lit.body %></td></h2>
           <h3><td><%= lit.created_at %></td></h3>
           <% if current_user.liked? lit %>
