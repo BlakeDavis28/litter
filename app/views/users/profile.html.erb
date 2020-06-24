@@ -9,7 +9,7 @@
     <p>
       <tr>
         <div class="lit">
-          <h3 class="black"><td><%= link_to lit.user.email, user_profile_path(lit.user) %></td></h3>
+          <h3 class="black"><td><%= link_to lit.user.email.split("@")[0], user_profile_path(lit.user) %></td></h3>
           <h2><td><%= lit.body %></td></h2>
           <h3><td><%= lit.created_at %></td></h3>
           <% if current_user.liked? lit %>

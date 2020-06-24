@@ -1,12 +1,12 @@
 <div>
   <% @lits.reverse.each do |lit| %>
     <tr>
-      <h1><%= link_to lit.user.email, user_profile_path(lit.user) %></h1>
+      <h1><%= link_to lit.user.email.split("@")[0], user_profile_path(lit.user) %></h1>
       <h2><td><%= lit.body %></td></h2>
       <h3><td><%= lit.created_at %></td></h3>
       <% if current_user.liked? lit %>
         <%= link_to dislike_lit_path(lit.id), method: :put do %>
-          <%= image_tag("like.png", :alt => "Like", height: 18, width: 20) %>
+           <%= image_tag("like.png", :alt => "Like", height: 18, width: 20) %>
           <%= lit.get_likes.size %>
         <% end %>
       <% else %>
