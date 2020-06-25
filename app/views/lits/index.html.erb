@@ -20,11 +20,12 @@
         <% end %>
       <% end %>
       <% if current_user == lit.user %>
+        <button type="button" class="btn btn-light">
         <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you Certain?", :method => :delete %>
+          </button>
       <% end %>
     </tr>
   <% end %>
-
 
 <button type="button" class="btn btn-light" id ="newlitbutt">
 <%= link_to 'New Litter', new_lit_path(@user) %>
