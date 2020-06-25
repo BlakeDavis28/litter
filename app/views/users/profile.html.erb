@@ -1,6 +1,6 @@
 <div>
-<h1><%= @userinfo.email %></h1>
-<h2>You have littered <%= @usercount.size %> time(s).</h2>
+<h1> <%= @userinfo.email %></h1>
+<h2 class = "lit-msg"> Has littered <%= @usercount.size %> time(s).</h2>
 </div>
 
 <div>
@@ -9,7 +9,7 @@
     <p>
       <tr>
         <div class="lit">
-          <h3 class="black"><td><%= link_to lit.user.email.split("@")[0], user_profile_path(lit.user) %></td></h3>
+          <h4 class="yeet"><td><%= link_to lit.user.email.split("@")[0], user_profile_path(lit.user) %></td></h4>
           <h2><td><%= lit.body %></td></h2>
           <h3><td><%= lit.created_at %></td></h3>
           <% if current_user.liked? lit %>
@@ -23,15 +23,15 @@
                 <%= lit.get_likes.size %>
             <% end %>
           <% end %>
-            <button type="button" class="btn btn-light">
-              <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you sure?", :method => :delete %>
-            </button>
-              <button type="button" class="btn btn-light">
-              <%= link_to 'Back', lits_path %>
-              </button>
         </div>
       </tr>
     </p>
   <% end %>
 <% end %>
 </div>
+
+<footer>
+  <button type="button" class="btn btn-light">
+  <%= link_to 'Back', lits_path %>
+  </button>
+</footer>

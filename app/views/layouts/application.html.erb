@@ -14,12 +14,15 @@
   <body>
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="jingle"> Litter - Your Trash Online </span>
+      <span class="jingle"> Litter </span>
       <% if user_signed_in? %>
       <div class="logged-in-as">
-        Logged in as <strong> <%= current_user.email.split("@")[0] %></strong>
+        Logged in as : <strong> <%= current_user.email.split("@")[0] %></strong>
         </div>
       <button type="button" class="btn btn-light">
+          <button type="button" class="btn btn-light">
+      <%= link_to 'New Litter', new_lit_path(@user), :class => 'navbar-link'%>
+      </button>
       <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %>
       </button>
       <button type="button" class="btn btn-light">

@@ -7,6 +7,7 @@
 
  body{
  font-family: 'Montserrat', sans-serif;
+
  }
 
  .lit-model {
@@ -17,10 +18,44 @@
  }
 
  .jingle {
-   margin-left: 1.5em;
    margin-right: 3em;
  }
 
 .logged-in-as {
-   margin-right: 21em;
+   margin-right: 22em;
+}
+
+h1 {
+ text-align: right;
+}
+.lit-msg {
+  font-size: 1em;
+  text-align: right;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+nav a {
+  padding: 5px;
+}
+
+h3 {
+ font-family: 'monospace';
+ font-size: 1em;
+ text-decoration: underline;
+}
+
+h4 {
+  font-family: 'monospace';
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 0.5em;
+  margin-top: 1.2em;
+}
+
+#newlitbutt {
+  float: right;
 }
