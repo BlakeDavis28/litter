@@ -11,9 +11,8 @@
 
   </head>
 
-
-
   <body>
+    <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <span> Litter - Your Trash on The Internet</span>
       <% if user_signed_in? %>
@@ -39,7 +38,4 @@
     <%= yield %>
   </body>
 </html>
-
-<button type="button" class="btn btn-light">
-<%= link_to 'Back', lits_path %>
-</button>
+</div>

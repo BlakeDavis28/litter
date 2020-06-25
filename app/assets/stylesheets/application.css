@@ -3,3 +3,15 @@
 *= require_self
 
 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+ body{
+ font-family: 'Montserrat', sans-serif;
+ }
+
+ .lit-model {
+   display: flex;
+   justify-content: center;
+   height: 500px;
+   width: 100%;
+ }

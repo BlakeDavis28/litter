@@ -5,4 +5,5 @@ class UsersController < ApplicationController
     @usercount = @userinfo.lits
     @lits = Lit.all
   end
+
 end
