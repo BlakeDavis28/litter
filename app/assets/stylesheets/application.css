@@ -10,13 +10,6 @@
  background-size: cover;
  }
 
- .lit-model {
-   display: flex;
-   justify-content: center;
-   height: 100%;
-   width: 100%;
- }
-
  .jingle {
    margin-right: 3em;
  }
@@ -33,8 +26,8 @@ h2 {
   font-size: 1.6em;
 }
 nav a {
- padding-left: 35px;
- padding-right: 35px;
+ padding-left: 46px;
+ padding-right: 46px;
 }
 
 h3 {
@@ -53,13 +46,23 @@ h4 {
   margin-top: 1.2em;
 }
 
-#newlitbutt, #indexdelete {
+#newlitbutt {
   float: right;
 }
 
-.logo {
-  display: block;
- margin-left: auto;
- margin-right: auto;
- width: 50%;
+.lit {
+
+   background: #fff;
+   border-radius: 8px;
+   border: 1px solid #d3d3d3;
+   box-shadow: 3px 3px #888888;
+   color: #14171a;
+   font-size: 14px;
+   line-height: 20px;
+   width: 80%;
+   padding: 20px;
+   margin-left: 10%;
+   margin-right: 10%;
+   /* margin: 10px; */
+
 }

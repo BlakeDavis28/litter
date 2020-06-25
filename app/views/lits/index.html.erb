@@ -1,10 +1,10 @@
-<div>
+<div class="row">
+<div class="form-group col-md-6 offset-md-3">
   <% @lits.reverse.each do |lit| %>
     <tr>
       <h4><%= link_to lit.user.email.split("@")[0], user_profile_path(lit.user) %></h4>
       <h2><td><%= lit.body %></td></h2>
       <h3><td><%= lit.created_at %></td></h3>
-
 
       <% if current_user.liked? lit %>
         <%= link_to dislike_lit_path(lit.id), method: :put do %>
@@ -12,7 +12,6 @@
           <%= lit.get_likes.size %>
         <% end %>
       <% else %>
-
 
       <%= link_to like_lit_path(lit), method: :put do %>
         <%= image_tag("dislike.png", :alt => "Like", height: 18, width: 20) %>
@@ -31,4 +30,5 @@
 <%= link_to 'New Litter', new_lit_path(@user) %>
 </button>
 
-    <%= image_tag("Litter.png", :alt => "litter logo") %>
+</div>
+</div>

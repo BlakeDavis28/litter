@@ -3,7 +3,8 @@
 <h2 class = "lit-msg"> Has littered <%= @usercount.size %> time(s).</h2>
 </div>
 
-<div>
+<div class="row">
+<div class="form-group col-md-6 offset-md-3">
 <% @lits.reverse.each do |lit| %>
   <% if @userinfo == lit.user %>
     <p>
@@ -28,10 +29,10 @@
     </p>
   <% end %>
 <% end %>
-</div>
-
 <footer>
   <button type="button" class="btn btn-light">
   <%= link_to 'Back', lits_path %>
   </button>
 </footer>
+</div>
+</div>
