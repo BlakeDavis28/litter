@@ -20,7 +20,7 @@
         <% end %>
       <% end %>
       <% if current_user == lit.user %>
-        <button type="button" class="btn btn-light">
+        <button type="button" class="btn btn-light" id="indexdelete">
         <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you Certain?", :method => :delete %>
           </button>
       <% end %>

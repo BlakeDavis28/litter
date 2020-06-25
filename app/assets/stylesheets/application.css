@@ -21,10 +21,6 @@
    margin-right: 3em;
  }
 
-.logged-in-as {
-   margin-right: 22em;
-}
-
 h1 {
  text-align: right;
 }
@@ -37,7 +33,8 @@ h2 {
   font-size: 1.6em;
 }
 nav a {
-  padding: 5px;
+ padding-left: 35px;
+ padding-right: 35px;
 }
 
 h3 {
@@ -56,6 +53,6 @@ h4 {
   margin-top: 1.2em;
 }
 
-#newlitbutt {
+#newlitbutt, #indexdelete {
   float: right;
 }
