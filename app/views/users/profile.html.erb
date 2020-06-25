@@ -23,9 +23,9 @@
                 <%= lit.get_likes.size %>
             <% end %>
           <% end %>
-          <span class="litter-button">
-            <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you sure?", :method => :delete %>
-          </span>
+            <button type="button" class="btn btn-light">
+              <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you sure?", :method => :delete %>
+            </button>
         </div>
       </tr>
     </p>
