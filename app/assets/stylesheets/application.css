@@ -5,9 +5,10 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
- body{
+ body {
  font-family: 'Montserrat', sans-serif;
-
+ background-image: image-url('Litter.png');
+ background-size: cover;
  }
 
  .lit-model {
@@ -55,4 +56,11 @@ h4 {
 
 #newlitbutt, #indexdelete {
   float: right;
+}
+
+.logo {
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
 }
