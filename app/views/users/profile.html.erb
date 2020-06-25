@@ -26,6 +26,9 @@
             <button type="button" class="btn btn-light">
               <%= link_to "Delete", lit_path(lit.id), :confirm => "Are you sure?", :method => :delete %>
             </button>
+              <button type="button" class="btn btn-light">
+              <%= link_to 'Back', lits_path %>
+              </button>
         </div>
       </tr>
     </p>

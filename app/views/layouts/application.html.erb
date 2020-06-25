@@ -14,9 +14,11 @@
   <body>
     <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span> Litter - Your Trash on The Internet</span>
+      <span class="jingle"> Litter - Your Trash Online </span>
       <% if user_signed_in? %>
+      <div class="logged-in-as">
         Logged in as <strong> <%= current_user.email.split("@")[0] %></strong>
+        </div>
       <button type="button" class="btn btn-light">
       <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %>
       </button>

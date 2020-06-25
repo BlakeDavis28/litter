@@ -12,6 +12,15 @@
  .lit-model {
    display: flex;
    justify-content: center;
-   height: 500px;
+   height: 100%;
    width: 100%;
  }
+
+ .jingle {
+   margin-left: 1.5em;
+   margin-right: 3em;
+ }
+
+.logged-in-as {
+   margin-right: 21em;
+}
