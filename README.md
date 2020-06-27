@@ -5,13 +5,20 @@ Try it here - https://litterblake.herokuapp.com/users/sign_in
 
 ## Technologies:
 
-Ruby 2.7.1
-Rails 5.2.4.3
-PostgreSQL
-Bootstrap
-Heroku
+- Ruby 2.7.1
 
-Gems: Devise, Likeable 
+- Rails 5.2.4.3
+
+- PostgreSQL
+
+- Bootstrap
+
+- Heroku
+
+- Gems: 
+
+- Devise 
+- Likeable 
 
 ## Features 
 
