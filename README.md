@@ -15,12 +15,16 @@ Gems: Devise, Likeable
 
 ## Features 
 
-Typical CRUD System
-User authentication
-Deployed to Heroku
+- Typical CRUD System
+
+- User authentication
+
+- Deployed to Heroku
 
 ## To Do 
 
-Adding comments with Disqus 
-Adding images with Cloudinary
-Further Bootstrap optimisation
+- Adding comments with Disqus 
+
+- Adding images with Cloudinary
+
+- Further Bootstrap optimisation
