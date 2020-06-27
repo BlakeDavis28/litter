@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project1 - Litter - A Twitter clone, but for Trash 
+Try it here - https://litterblake.herokuapp.com/users/sign_in
 
-Things you may want to cover:
+## Technologies:
 
-* Ruby version
+Ruby 2.7.1
+Rails 5.2.4.3
+PostgreSQL
+Bootstrap
+Heroku
 
-* System dependencies
+Gems: Devise, Likeable 
 
-* Configuration
+## Features 
 
-* Database creation
+Typical CRUD System
+User authentication
+Deployed to Heroku
 
-* Database initialization
+## To Do 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Adding comments with Disqus 
+Adding images with Cloudinary
+Further Bootstrap optimisation
